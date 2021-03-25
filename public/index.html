@@ -3,31 +3,71 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
-    <!--Font-->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/headers.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter: a duplo-blocks company</span>
+    <nav class="nav-bar">
+      <h1 class="main-logo">screechr: a duplo-blocks company</h1>
+      <div id="write-a-tweet">
+        <div><b>Write</b> a tweet</div>
+        <label for="tweet-text" class="label-style"><i style="color: red;"class="far fa-angle-double-down"></i></label>
+      </div>
     </nav>
-
+    <header>
+      <div id=img-background>
+        <div>
+          <img alt="profile hex" src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+          <h2 class="user"><b>Boris</b> Chairman</h2>
+        </div>
+      </div>
+    </header>
+  
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <div id="longWarning" class="warning" hidden> &#9995 Whoa there Eddie Murphy! Lets keep the character # under 140 &#128574 </div>
+      <div id="emptyWarning" class="warning" hidden> ⚠️ Speak up you're muttering! (Type something down thurr ) ⚠️ </div>
+
+      <section class="new-tweet">
+        <div id="headertest">
+          <h2>Compose Screech</h2>
+        </div>
+        <form action="/tweets" id="create-tweet" method="POST" style="width: 100%;">
+          <textarea name="text" class="tweet-text" id="tweet-text" placeholder="What are you screeching about?"></textarea>
+          <div id="new-tweet-submit">
+            <button type="submit" class="tweet-btn">Tweet</button>
+            <output name="counter" id="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="scripts/compose-char-counter.js"></script>
   </body>
 </html>

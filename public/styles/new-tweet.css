@@ -1,0 +1,62 @@
+/* Scheme:
+Dark Green: #1b3234
+dark grey: #4e5658
+Yellow: #8a754d
+Light grey: #869498
+lightest grey: #bbb3af */
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 75%;
+}
+
+#headertest {
+  text-align: left;
+  width: 100%;
+}
+
+#tweet-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#tweet-text {
+  background-color: #bbb3af;
+  resize: none;
+  width: 100%;
+  margin-bottom: 0.5em;
+  border-bottom: solid black 5px;
+}
+
+#new-tweet-submit {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee";
+  margin-bottom: 30px;
+}
+#new-tweet-submit .tweet-btn {
+  background-color: transparent;
+  color: #4e5658;
+  border: solid #4e5658 2px;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+}
+
+#new-tweet-submit .tweet-btn:hover {
+  background-color: #4e5658;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .new-tweet {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
