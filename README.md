@@ -4,6 +4,12 @@ Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
 
+## Screenshots
+!["Screenshot of tweet-box"](https://github.com/m-antone1/tweeter/blob/master/docs/tweet-box.png)
+!["Screenshot of tweets"](https://github.com/m-antone1/tweeter/blob/master/docs/tweets.png)
+!["Error when tweet too long"](https://github.com/m-antone1/tweeter/blob/master/docs/long-tweet-error.png)
+!["Error when field empty"](https://github.com/m-antone1/tweeter/blob/master/docs/empty-tweet-error.png)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
