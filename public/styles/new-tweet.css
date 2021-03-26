@@ -22,7 +22,7 @@
 }
 
 #tweet-text {
-  /* background-color: #bbb3af; */
+  background-color: #ffffff;
   resize: none;
   width: 100%;
   margin-bottom: 0.5em;
@@ -37,8 +37,8 @@
 }
 #new-tweet-submit .tweet-btn {
   background-color: transparent;
-  /* color: #4e5658;
-  border: solid #4e5658 2px; */
+  color: #3f626b;
+  border: solid #74daf3 2px;
   border-radius: 4px;
   transition-duration: 0.5s;
 }
