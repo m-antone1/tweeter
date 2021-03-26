@@ -87,7 +87,7 @@ $(document).ready(function() {
       $textArea.val('');
       $form.find('.counter').val('140');
     } else if(textLength > 140){
-      $('#longWarning').fadeIn().delay(2000).fadeOut();
+      $('#longWarning').fadeIn().delay(6000).fadeOut();
     } else {
       $('#emptyWarning').fadeIn().delay(2000).fadeOut();
     }
