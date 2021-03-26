@@ -1,9 +1,3 @@
-/* Scheme:
-Dark Green: #1b3234
-dark grey: #4e5658
-Yellow: #8a754d
-Light grey: #869498
-lightest grey: #bbb3af */
 
 .tweet {
   display: flex;
@@ -48,7 +42,7 @@ lightest grey: #bbb3af */
 }
 
 .tweet p {
-  border-bottom: solid #4e5658 3px;
+  border-bottom: solid #213d44 3px;
   margin-bottom: 0;
   padding-bottom: 1em;
 }
@@ -73,7 +67,8 @@ lightest grey: #bbb3af */
   margin-right: 5px;
 }
 
-@media only screen and (max-width: 500px) {
+/* for mobile display */
+@media only screen and (max-width: 600px) {
   .tweet {
     width: 100%;
   }

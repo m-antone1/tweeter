@@ -97,5 +97,5 @@ $(document).ready(function() {
     $textArea.focus();
   })
   
-  loadTweets().then(renderTweets);
+  loadTweets().then(renderTweets); 
 });

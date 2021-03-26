@@ -31,14 +31,14 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav class="nav-bar">
-      <h1 class="main-logo">screechr: a duplo-blocks company</h1>
+      <h1 class="main-logo">screechr</h1>
       <div id="write-a-tweet">
-        <div><b>Write</b> a tweet</div>
+        <div><b>Screech</b> something</div>
         <label for="tweet-text" class="label-style"><i style="color: red;"class="far fa-angle-double-down"></i></label>
       </div>
     </nav>
     <header>
-      <div id=img-background>
+      <div id="img-background">
         <div>
           <img alt="profile hex" src="/images/profile-hex.png"> 
         </div>
@@ -51,17 +51,16 @@
   
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <div id="longWarning" class="warning" hidden> &#9995 Whoa there Eddie Murphy! Lets keep the character # under 140 &#128574 </div>
-      <div id="emptyWarning" class="warning" hidden> ⚠️ Speak up you're muttering! (Type something down thurr ) ⚠️ </div>
+      <div id="longWarning" class="warning" hidden> &#9995 Whoa there Eddie Murphy! Keep the character # under 140 &#128574 </div>
+      <div id="emptyWarning" class="warning" hidden>  Speak up you're muttering! (Type something down thurr )  </div>
 
       <section class="new-tweet">
-        <div id="headertest">
           <h2>Compose Screech</h2>
         </div>
         <form action="/tweets" id="create-tweet" method="POST" style="width: 100%;">
-          <textarea name="text" class="tweet-text" id="tweet-text" placeholder="What are you screeching about?"></textarea>
+          <textarea name="text" class="tweet-text" id="tweet-text" placeholder="What are we screeching about today!?"></textarea>
           <div id="new-tweet-submit">
-            <button type="submit" class="tweet-btn">Tweet</button>
+            <button type="submit" class="tweet-btn">SCREEEECH</button>
             <output name="counter" id="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>

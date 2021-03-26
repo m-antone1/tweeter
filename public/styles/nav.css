@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   #write-a-tweet {
     display: none;
   }
